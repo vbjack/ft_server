@@ -13,7 +13,6 @@ COPY srcs/ssl-params.conf /srcs
 COPY srcs/start.sh /srcs
 COPY srcs/wordpress.sh /srcs
 COPY srcs/wp-config.php /srcs
-COPY srcs/wp-site-autoindex.conf /srcs
 COPY srcs/wp-site.conf /srcs
 
 EXPOSE 80

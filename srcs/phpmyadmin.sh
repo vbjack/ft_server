@@ -14,7 +14,7 @@ echo "FLUSH PRIVILEGES;" | mysql
 
 #MODIFY CONF FOR SITE
 rm /etc/nginx/sites-enabled/default
-cp -rf wp-site-autoindex.conf /etc/nginx/sites-available/wp-site.conf
+cp -rf wp-site.conf /etc/nginx/sites-available/wp-site.conf
 ln -s /etc/nginx/sites-available/wp-site.conf /etc/nginx/sites-enabled/wp-site.conf
 
 mkdir -p /usr/share/phpmyadmin/tmp
