@@ -22,9 +22,9 @@ chmod +x phpmyadmin.sh
 chmod +x wordpress.sh
 ./wordpress.sh
 
+chmod +x autoindex.sh
+
 #START SERVICES
 service php7.3-fpm start
-service nginx restart
-
-chmod +x autoindex.sh
-/bin/bash
+service nginx stop
+nginx -g "daemon off;"
